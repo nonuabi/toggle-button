@@ -18,10 +18,12 @@ function check() {
 function blacktheme() {
 	para.style.color = "white";
 	document.body.style.backgroundColor= "black";
+	togbtn.style.marginLeft = "79px";
 	document.getElementById('outer').style.backgroundColor = "white";
 }
 
 function whitetheme() {
 	para.style.color = "black";
+	togbtn.style.margin = "0 0 0 0";
 	document.body.style.backgroundColor= "white";
 }
