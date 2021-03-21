@@ -1,19 +1,42 @@
+#outer {
+	border : 5px solid black;
+	width: 100px;
+	height: 20px;
+	border-radius: 20px;
+	position: relative;
+	left: 40px;
+}
 
-#togglebtn{
+#inner {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color:orange;
+	left: 2px;
+
+}
+#heading {
+	color: black;
+}
+
+
+/*#togglebtn{
 	-webkit-appearance:none;
 	position: relative;
 	outline:none;
 	height: 40px;
 	width: 100px;
-	background-color: black;
+	background-color: "white";
+	border: 5px solid black;
 	border-radius: 20px;
 }
 
 #togglebtn:before {
 	content: "";
 	position: absolute;
-	background-color: orange;
-	height: 40px;
+	background-color: black;
+	height: 30px;
 	width: 50px;
 	border-radius: 20px;
-}
+}*/

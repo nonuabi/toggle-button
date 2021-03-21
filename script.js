@@ -1,24 +1,27 @@
-var onOff = true;
-var btn = document.getElementById('togglebtn');
+var togbtn = document.getElementById('inner')
+var para = document.getElementById('heading');
+var firstClick = false;
 
-function on() {
-	btn.style.background = "red";
-	onOff = true;
-	
-}
 
-function off() {
-	btn.style.background = "cyan";
-	onOff = false;
-}
+togbtn.addEventListener('click', check);
 
-function check(event) {
-	if(event) {
-		off();
+function check() {
+	if(firstClick) {
+		whitetheme();
+		firstClick = false;
 	} else {
-		on();
+		blacktheme();
+		firstClick = true;
 	}
-	console.log(onOff);
 }
 
-btn.addEventListener('onclick', check(onOff));
+function blacktheme() {
+	para.style.color = "white";
+	document.body.style.backgroundColor= "black";
+	document.getElementById('outer').style.backgroundColor = "white";
+}
+
+function whitetheme() {
+	para.style.color = "black";
+	document.body.style.backgroundColor= "white";
+}
