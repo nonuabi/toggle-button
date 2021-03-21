@@ -24,6 +24,6 @@ function blacktheme() {
 
 function whitetheme() {
 	para.style.color = "black";
-	togbtn.style.margin = "0 0 0 0";
+	togbtn.style.margin = "1px 0 0 1px";
 	document.body.style.backgroundColor= "white";
 }

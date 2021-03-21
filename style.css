@@ -1,21 +1,25 @@
-#outer {
-	border : 5px solid black;
+
+#outer {	
+	border : 2px solid black;
 	width: 100px;
-	height: 20px;
+	height: 25px;
 	border-radius: 20px;
-	position: relative;
-	left: 40px;
+	margin: 10% 50% 0 45%;
+
 }
 
 #inner {
 	width: 20px;
-	height: 20px;
-	border-radius: 50%;
-	background-color:orange;
-	
+	height: 23px;
+	border-radius: 100%;
+	background-color:black;
+	margin: 1px 0 0 1px;	
 
 }
 #heading {
+	position: relative;
+	bottom: 50%;
+	left: 35%;
 	color: black;
 }
 
